@@ -115,3 +115,58 @@
 	});
 
 })(jQuery);
+
+
+/* js for scroll reveal */
+const sections = document.querySelectorAll("section");
+sections.forEach((section) =>{
+
+	
+	window.addEventListener("load", eventListener);
+    window.addEventListener("scroll", eventListener);
+
+	function eventListener(){
+
+		let windowHeight = window.innerHeight;
+		let sectionRectTop = section.getBoundingClientRect().top;
+
+	//console.log("window Height: " + windowHeight);
+	//console.log("section RectTop: " + sectionRectTop);
+
+	if(sectionRectTop < windowHeight){
+		section.classList.add("active");
+	}
+	}
+	//revealing element one by one on scroll
+	window.addEventListener("scroll", () => {
+		let reveals = section.querySelectorAll(".reveal");
+		reveals.forEach((reveal, index) => {
+			if(section.classList.contains("active")){
+				const delay = 600;
+				setTimeout(() => {
+					reveal.classList.add("active");
+				}, index * delay);
+			}
+		});
+	});
+	// scroll element one by one
+	window.addEventListener("load", () => {
+		let reveals = section.querySelectorAll(".reveal");
+		
+		reveal.forEach((reveal, index) => {
+
+			let windowHeight = window.innerHeight;
+		    let revealRectTop = reveal.getBoundingClientRect().top;
+
+			if(revealRectTop < windowHeight){
+				const delay = 600;
+
+				setTimeout(() => {
+					reveal.classList.add("active");
+				}, index * delay);
+			}
+
+		});
+	
+	});
+});
