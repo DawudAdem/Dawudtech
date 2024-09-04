@@ -617,8 +617,8 @@ a:hover {
 
 .intro .intro-title {
   position: absolute;
-top: 50%;
-left: 50%;
+top: 70%;
+left: 25%;
   transform: translate(-50%, -50%);
 background: #fffffe -webkit-gradient(linear, left top, right top, from(#262626),
 to(#262626), color-stop(0.5, #fff)) 0 0 no-repeat;
@@ -1206,13 +1206,19 @@ footer .credits a {
   line-height: 1.5;
   border-radius: .3rem;
 }
+
 @media (max-width: 400px) {
   .counter-box {
     margin-bottom: 1.8rem;
   }
   .intro .intro-title {
-    font-size: 1.5rem;
-  
+    font-size: 1.7rem;
+    top: 70%;
+    left: 35%;
+  }
+
+  .intro .intro-title span{
+    font-size: 1.2rem;
   }
 }
 
@@ -1221,8 +1227,9 @@ footer .credits a {
     margin-bottom: 1.8rem;
   }
   .intro .intro-title {
-    font-size: 1.5rem;
-  
+    font-size: 2.2rem;
+    top: 70%;
+    left: 35%;
   }
 }
 
@@ -1234,7 +1241,6 @@ footer .credits a {
   .intro .intro-title {
     font-size: 2.5rem;
   }
-  .
 }
 
 @media (min-width: 767px) {

@@ -142,7 +142,7 @@ sections.forEach((section) =>{
 		let reveals = section.querySelectorAll(".reveal");
 		reveals.forEach((reveal, index) => {
 			if(section.classList.contains("active")){
-				const delay = 600;
+				const delay = 200;
 				setTimeout(() => {
 					reveal.classList.add("active");
 				}, index * delay);
@@ -159,7 +159,7 @@ sections.forEach((section) =>{
 		    let revealRectTop = reveal.getBoundingClientRect().top;
 
 			if(revealRectTop < windowHeight){
-				const delay = 600;
+				const delay = 200;
 
 				setTimeout(() => {
 					reveal.classList.add("active");
