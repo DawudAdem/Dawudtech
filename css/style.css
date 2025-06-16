@@ -339,7 +339,7 @@ a:hover {
 }
 
 /* Prelaoder */
-
+/*
 #preloader {
   position: fixed;
   top: 0;
@@ -351,7 +351,7 @@ a:hover {
   background: #fff;
 }
 
-/*
+
 
 #preloader:before {
   content: "";
@@ -391,7 +391,7 @@ a:hover {
   }
 }
 
-*/
+
 
 /* From Uiverse.io by Vazafirst */ 
 #page {
@@ -473,11 +473,13 @@ a:hover {
   from {
     transform: rotateX(70deg) rotateZ(270deg);
   }
+  
 
   to {
     transform: rotateX(70deg) rotateZ(630deg);
   }
 }
+*/
 /* Improving visualization in light mode */
 
 /*======================================
